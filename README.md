@@ -22,7 +22,7 @@ These plugins are Prettier and ESlint
 3. In the search, type Prettier and click "ESlint", then click on "install".
 4. That's all to install ESlint in VSCode 🥳
 
-### Downloading and open project
+### Downloading
 
 1. Click on the code button in this repository
 2. Select the Download Zip option
