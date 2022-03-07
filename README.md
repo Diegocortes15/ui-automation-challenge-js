@@ -7,7 +7,7 @@ Installed:
 - Firefox
 - MicrofoftEdge
 
-You must have [Visual Studio Code](https://code.visualstudio.com/download)
+You must have [Visual Studio Code](https://code.visualstudio.com/download) installed
 
 Once installed [Visual Studio Code](https://code.visualstudio.com/download) you need to install a couple of plugins to help us set up our framework.
 
