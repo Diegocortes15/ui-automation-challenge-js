@@ -36,9 +36,9 @@ These plugins are Prettier and ESlint
 
 ### Open project
 
-- First way: Right click on the folder and open it as Visual Studio Code
-- Second way: Open Visual Studio code and drag the folder in Visual Studio Code Window
-- Third way: Open Visual Studio, on top sidebar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
+- <ins>First way</ins>: Right click on the folder and open it as Visual Studio Code
+- <ins>Second way</ins>: Open Visual Studio code and drag the folder in Visual Studio Code Window
+- <ins>Third way</ins>: Open Visual Studio, on top sidebar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
 
 ## Running project
 
