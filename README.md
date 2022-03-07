@@ -84,17 +84,24 @@ Type next commands to execute the next test cases
 ### Running test cases at the same time
 
 - Running all test cases
-   - On the terminal: 
-      - ```npx kill-port 4444 ; npx wdio```
+
+    - On Windows: ``` npx kill-port 4444 ; npx wdio ```
+    - On Mac: ``` npx kill-port 4444 && npx wdio ```
     
 - Running test cases by suite
-    
-  - On the terminal: 
-    - ```npx kill-port 4444 ; npx wdio --suite login```
-    - ```npx kill-port 4444 ; npx wdio --suite logout```
-    - ```npx kill-port 4444 ; npx wdio --suite products```
-    - ```npx kill-port 4444 ; npx wdio --suite purchase```
+    - Login Suite
+        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite login ```
+        - On Mac: ``` npx kill-port 4444 && npx wdio --suite login ```
+    - Logout Suite
+        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite logout ```
+        - On Mac: ``` npx kill-port 4444 && npx wdio --suite logout ```
+    - Products Suite
+        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite products ```
+        - On Mac: ``` npx kill-port 4444 && npx wdio --suite products ```
+    - Purchase Suite
+        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite purchase ```
+        - On Mac: ``` npx kill-port 4444 && npx wdio --suite purchase ```
 
-## Open Allure report
+### Open Allure report
 
-``` npx allure open ```
+- ``` npx allure open ```
