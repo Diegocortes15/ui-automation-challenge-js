@@ -46,7 +46,7 @@ These plugins are Prettier and ESlint
 
 Type next commands to execute the next test cases
 
-- Type npm init and wait all packages will be downloaded
+- Type ``` npm init ``` and wait all packages will be downloaded
 
 ### Running test cases
 
