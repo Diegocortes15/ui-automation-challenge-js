@@ -44,7 +44,7 @@ These plugins are Prettier and ESlint
 
 - In Visual Studio Code, open new terminal with ``` Ctrl+Shift+` ``` or on top sidebar click Terminal, then click New Terminal
 
-Type next commands to execute the next test cases
+Type the following commands to run the following test cases
 
 - Type ``` npm init ``` and wait all packages will be downloaded
 
