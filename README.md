@@ -40,7 +40,7 @@ These plugins are Prettier and ESlint
 
 ### Open project
 
-- <ins>First way</ins>: Right click on the folder and open it as Visual Studio Code
+- <ins>First way</ins>: Right click on the folder and open it with Visual Studio Code
 - <ins>Second way</ins>: Open Visual Studio code and drag the folder in Visual Studio Code Window
 - <ins>Third way</ins>: Open Visual Studio, on top sidebar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
 
@@ -54,7 +54,7 @@ These plugins are Prettier and ESlint
 
 Type the following commands to run the following test cases
 
-- Type ``` npm init ``` and wait all packages will be downloaded
+- Type ``` npm install ``` and wait all packages will be downloaded
 
 ### Running test cases
 
