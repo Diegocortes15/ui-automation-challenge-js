@@ -20,12 +20,16 @@ These plugins are Prettier and ESlint
 3. In the search, type Prettier and click "Prettier - Code formatter", then click on "install".
 4. That's all to install Prettier in VSCode 🥳
 
+![prettier-gif](https://user-images.githubusercontent.com/60171460/157133893-0e7a3145-d829-4b3f-bd5f-10b09bebe2bc.gif)
+
 #### 🤔 How to install ESlint in Visual Studio Code?
 
 1. Go to Visual Studio Code application.
 2. On left sidebar in Visual Studio Code, click "Extensions" or press ``` Crtl+Shift+X ```.
 3. In the search, type Prettier and click "ESlint", then click on "install".
 4. That's all to install ESlint in VSCode 🥳
+
+![eslint-gif](https://user-images.githubusercontent.com/60171460/157133918-10c89078-a1c2-463e-a3cd-d93509aafe53.gif)
 
 ### Download project
 
@@ -40,9 +44,13 @@ These plugins are Prettier and ESlint
 - <ins>Second way</ins>: Open Visual Studio code and drag the folder in Visual Studio Code Window
 - <ins>Third way</ins>: Open Visual Studio, on top sidebar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
 
+![openProject-gif](https://user-images.githubusercontent.com/60171460/157133969-48d2908d-0a9a-463e-9441-b6010c76b55f.gif)
+
 ## Running project
 
 - In Visual Studio Code, open new terminal with ``` Ctrl+Shift+` ``` or on top sidebar click Terminal, then click New Terminal
+
+![openTerminal](https://user-images.githubusercontent.com/60171460/157134643-7f26e19c-4632-4ab5-b547-8dd1c6f08ba7.gif)
 
 Type the following commands to run the following test cases
 
@@ -58,8 +66,6 @@ Type the following commands to run the following test cases
 2. Login with an invalid user
     - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/loginFailed.js ```
     - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/loginFailed.js ```
-    
-    
 
 3. Logout from the home page
     - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/logout.js ```
