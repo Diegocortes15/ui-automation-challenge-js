@@ -35,7 +35,7 @@ These plugins are Prettier and ESlint
 - Second way: Open Visual Studio code and drag the folder in Visual Studio Code Window
 - Third way: Open Visual Studio, on top sidebar, click File and Open Folder or press ```Ctrl+K Ctrl+O```, then choose the folder where you save it
 
-### Running project
+## Running project
 
 - In Visual Studio Code, open new terminal with ```Ctrl+Shift+` ``` or on top sidebar click Terminal, then click New Terminal
 
@@ -43,7 +43,7 @@ Type next commands to execute the next test cases
 
 - Type npm init and wait all packages will be downloaded
 
-#### Running test cases
+### Running test cases
 
 1. Login with a valid user
 
@@ -76,7 +76,7 @@ Type next commands to execute the next test cases
     - On Windows: ```npx kill-port 4444 ; npx wdio --spec test/specs/purchase.js```
     - On Mac: ```npx kill-port 4444 && npx wdio --spec test/specs/purchase.js```
     
-#### Running test cases at the same time
+### Running test cases at the same time
 
 - Running all test cases
    - On the terminal: 
