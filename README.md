@@ -55,6 +55,8 @@ These plugins are Prettier and ESlint
 
 ![eslint-gif](https://user-images.githubusercontent.com/60171460/157133918-10c89078-a1c2-463e-a3cd-d93509aafe53.gif)
 
+## Download and open project
+
 ### Download project
 
 1. Click on the code button in this repository
