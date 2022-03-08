@@ -22,7 +22,7 @@ Installed:
 
 You must have [Visual Studio Code](https://code.visualstudio.com/download) installed
 
-Once installed [Visual Studio Code](https://code.visualstudio.com/download) you need to install a couple of plugins to help you set up the framework.
+Once you have installed [Visual Studio Code](https://code.visualstudio.com/download) you need to install a couple of plugins to help you set up the framework.
 
 These plugins are Prettier and ESlint
 
