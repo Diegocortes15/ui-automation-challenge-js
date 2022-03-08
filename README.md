@@ -4,18 +4,21 @@
 
 #### JDK Java
 
-1. Make sure you have installed [JDK java](https://www.oracle.com/java/technologies/downloads/) to run Selenium Standalone Service.
-2. Take in mind the path when you are saving Java folder that contains jdk
-3. Copy jdk path
+1. Make sure you have installed [JDK Java](https://www.oracle.com/java/technologies/downloads/) to run Selenium Standalone Service.
+2. Take in mind the **path** when you are saving Java folder **that contains jdk**.
+3. Copy jdk path.
 4. On windwos, in search bar type, enviroment variables and click on **Edit the system enviroment variables**.
-5. In the system properties window, click **enviroment variables**
+5. In the **System properties** window, click **enviroment variables**.
+6. In **Enviroment variables** window, in **System variables** section, double click **Path**.
+7. In **Edit enviroment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
+8. Close the open windows and that's all to install JDK 🥳.
 
 #### Node.js
 
 1. You need must have [Node.js](https://nodejs.org/en/) installed (Node.js LTS version recommended)
 2. When you are installing Node.js, make sure to check the option
 
-    - [x] Automatically install the necesary tools. Note that this will also install Chocolatey. The script will pop-up in a new window after the installation completes.
+    - [x] **Automatically install the necesary tools. Note that this will also install Chocolatey. The script will pop-up in a new window after the installation completes.**
 
 ![nodeInstall](https://user-images.githubusercontent.com/60171460/157139770-d00bb969-9b36-4179-9dd2-ec5bf3fbd89a.PNG)
 
