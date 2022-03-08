@@ -2,10 +2,23 @@
 ## Tutorial to run the project
 ### Prerequisites
 
+#### Node.js
+
+1. You need must have [Node.js](https://nodejs.org/en/) installed (Node.js LTS version recommended)
+2. When you are installing Node.js, make sure to check the option
+
+    - [x] Automatically install the necesary tools. Note that this will also install Chocolatey. The script will pop-up in a new window after the installation completes.
+
+![nodeInstall](https://user-images.githubusercontent.com/60171460/157139770-d00bb969-9b36-4179-9dd2-ec5bf3fbd89a.PNG)
+
+#### Browsers
+
 Installed:
 - Chrome
 - Firefox
 - MicrofoftEdge
+
+#### Visual Studio Code
 
 You must have [Visual Studio Code](https://code.visualstudio.com/download) installed
 
