@@ -2,6 +2,14 @@
 ## Tutorial to run the project
 ### Prerequisites
 
+#### JDK Java
+
+1. Make sure you have installed [JDK java](https://www.oracle.com/java/technologies/downloads/) to run Selenium Standalone Service.
+2. Take in mind the path when you are saving Java folder that contains jdk
+3. Copy jdk path
+4. On windwos, in search bar type, enviroment variables and click on **Edit the system enviroment variables**.
+5. In the system properties window, click **enviroment variables**
+
 #### Node.js
 
 1. You need must have [Node.js](https://nodejs.org/en/) installed (Node.js LTS version recommended)
@@ -53,9 +61,9 @@ These plugins are Prettier and ESlint
 
 ### Open project
 
-- <ins>First way</ins>: Right click on the folder and open it with Visual Studio Code
-- <ins>Second way</ins>: Open Visual Studio code and drag the folder in Visual Studio Code Window
-- <ins>Third way</ins>: Open Visual Studio, on top bar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
+- **<ins>First way</ins>:** Right click on the folder and open it with Visual Studio Code
+- **<ins>Second way</ins>:** Open Visual Studio code and drag the folder in Visual Studio Code Window
+- **<ins>Third way</ins>:** Open Visual Studio, on top bar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
 
 ![openProject-gif](https://user-images.githubusercontent.com/60171460/157133969-48d2908d-0a9a-463e-9441-b6010c76b55f.gif)
 
