@@ -7,7 +7,7 @@
 1. Make sure you have installed [JDK Java](https://www.oracle.com/java/technologies/downloads/) to run Selenium Standalone Service.
 2. Take in mind the **path** when you are saving Java folder **that contains jdk**.
 3. Copy jdk path.
-4. On windows, in search bar type, enviroment variables and click on **Edit the system enviroment variables**.
+4. On windows, in search bar, type enviroment variables and click on **Edit the system enviroment variables**.
 5. In the **System properties** window, click **enviroment variables**.
 6. In **Enviroment variables** window, in **System variables** section, double click **Path**.
 7. In **Edit enviroment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
