@@ -1,4 +1,4 @@
-# Automation Challenge
+# Automation Challenge 🈸
 ## Tutorial to run the project
 ### Prerequisites
 
