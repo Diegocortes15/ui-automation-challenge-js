@@ -11,7 +11,7 @@
 5. In the **System properties** window, click **enviroment variables**.
 6. In **Enviroment variables** window, in **System variables** section, double click **Path**.
 7. In **Edit enviroment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
-8. Close the open windows and that's all to install JDK 🥳.
+8. Close the open windows and that's all to install JDK to run Selenium Standalone Serivice 🥳.
 
 #### Node.js
 
