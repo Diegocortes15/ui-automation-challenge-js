@@ -55,13 +55,13 @@ These plugins are Prettier and ESlint
 
 - <ins>First way</ins>: Right click on the folder and open it with Visual Studio Code
 - <ins>Second way</ins>: Open Visual Studio code and drag the folder in Visual Studio Code Window
-- <ins>Third way</ins>: Open Visual Studio, on top sidebar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
+- <ins>Third way</ins>: Open Visual Studio, on top bar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
 
 ![openProject-gif](https://user-images.githubusercontent.com/60171460/157133969-48d2908d-0a9a-463e-9441-b6010c76b55f.gif)
 
 ## Running project
 
-- In Visual Studio Code, open new terminal with ``` Ctrl+Shift+` ``` or on top sidebar click Terminal, then click New Terminal
+- In Visual Studio Code, open new terminal with ``` Ctrl+Shift+` ``` or on top bar click Terminal, then click New Terminal
 
 ![openTerminal](https://user-images.githubusercontent.com/60171460/157134643-7f26e19c-4632-4ab5-b547-8dd1c6f08ba7.gif)
 
