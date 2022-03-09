@@ -9,11 +9,19 @@
 1. Make sure you have installed [JDK Java](https://www.oracle.com/java/technologies/downloads/).
 2. Take in mind the **path** when you are saving Java folder **that contains jdk**.
 3. Copy jdk path.
+
+![JDK1](https://user-images.githubusercontent.com/60171460/157490631-05ab1bfb-ac26-46e5-95a3-ea89c261247d.png)
+
 4. On windows, in search bar, type enviroment variables and click on **Edit the system enviroment variables**.
+
+![Edit the system enviroment variables](https://user-images.githubusercontent.com/60171460/157491189-086f3ff1-309f-490b-a4e4-3a350719124f.gif)
+
 5. In the **System properties** window, click **enviroment variables**.
 6. In **Enviroment variables** window, in **System variables** section, double click **Path**.
 7. In **Edit enviroment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
 8. Close the open windows and that's all to install JDK 🥳.
+
+![install JDK](https://user-images.githubusercontent.com/60171460/157491400-24e2c560-59a6-46a9-a829-5f5b84883d58.gif)
 
 #### Node.js
 
