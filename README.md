@@ -12,9 +12,9 @@
 
 ![JDK1](https://user-images.githubusercontent.com/60171460/157490631-05ab1bfb-ac26-46e5-95a3-ea89c261247d.png)
 
-4. On windows, in search bar, type **enviroment variables** and click on **Edit the system environment variables**.
+4. On windows, in search bar, type **environment variables** and click on **Edit the system environment variables**.
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/60171460/157494171-88a10cd8-65b0-4198-9096-0580a91d0a56.gif)
+![environment variables](https://user-images.githubusercontent.com/60171460/157496931-f1d25ccc-66c8-4608-9a3b-24fd2411a920.gif)
 
 
 5. In the **System properties** window, click **enviroment variables**.
@@ -22,7 +22,7 @@
 7. In **Edit enviroment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
 8. Close the open windows and that's all to install JDK 🥳.
 
-![install JDK](https://user-images.githubusercontent.com/60171460/157493595-5b0b799a-525b-4ea4-b53e-faf90bdc104e.gif)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/60171460/157497327-09035824-bc66-4f1f-ad66-a92690bf4313.gif)
 
 #### Node.js
 
