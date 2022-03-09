@@ -12,16 +12,17 @@
 
 ![JDK1](https://user-images.githubusercontent.com/60171460/157490631-05ab1bfb-ac26-46e5-95a3-ea89c261247d.png)
 
-4. On windows, in search bar, type enviroment variables and click on **Edit the system enviroment variables**.
+4. On windows, in search bar, type **enviroment variables** and click on **Edit the system environment variables**.
 
-![Edit the system enviroment variables](https://user-images.githubusercontent.com/60171460/157491189-086f3ff1-309f-490b-a4e4-3a350719124f.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/60171460/157494171-88a10cd8-65b0-4198-9096-0580a91d0a56.gif)
+
 
 5. In the **System properties** window, click **enviroment variables**.
-6. In **Enviroment variables** window, in **System variables** section, double click **Path**.
+6. In **Enviroment variables** window in **Advanced tab**, in **System variables** section, double click **Path**.
 7. In **Edit enviroment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
 8. Close the open windows and that's all to install JDK 🥳.
 
-![install JDK](https://user-images.githubusercontent.com/60171460/157491400-24e2c560-59a6-46a9-a829-5f5b84883d58.gif)
+![install JDK](https://user-images.githubusercontent.com/60171460/157493595-5b0b799a-525b-4ea4-b53e-faf90bdc104e.gif)
 
 #### Node.js
 
@@ -54,7 +55,7 @@ These plugins are Prettier and ESlint
 3. In the search, type Prettier and click **Prettier - Code formatter**, then click on **install**.
 4. That's all to install Prettier in VSCode 🥳
 
-![prettier-gif](https://user-images.githubusercontent.com/60171460/157133893-0e7a3145-d829-4b3f-bd5f-10b09bebe2bc.gif)
+![prettier-gif](https://user-images.githubusercontent.com/60171460/157494947-54ed24b8-21dd-45bb-9b27-a29a5e3493b9.gif)
 
 #### 🤔 How to install ESlint in Visual Studio Code?
 
@@ -63,7 +64,7 @@ These plugins are Prettier and ESlint
 3. In the search, type Prettier and click **ESlint**, then click on **install**.
 4. That's all to install ESlint in VSCode 🥳
 
-![eslint-gif](https://user-images.githubusercontent.com/60171460/157133918-10c89078-a1c2-463e-a3cd-d93509aafe53.gif)
+![eslint-gif](https://user-images.githubusercontent.com/60171460/157495264-718507fb-aef2-4375-b089-5eb7f9858c33.gif)
 
 ## Download and open project
 
