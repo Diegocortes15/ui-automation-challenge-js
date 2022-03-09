@@ -17,12 +17,12 @@
 ![environment variables](https://user-images.githubusercontent.com/60171460/157496931-f1d25ccc-66c8-4608-9a3b-24fd2411a920.gif)
 
 
-5. In the **System properties** window, click **enviroment variables**.
-6. In **Enviroment variables** window in **Advanced tab**, in **System variables** section, double click **Path**.
-7. In **Edit enviroment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
+5. In the **System properties** window, click **environment variables**.
+6. In **Environment variables** window in **Advanced tab**, in **System variables** section, double click **Path**.
+7. In **Edit environment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
 8. Close the open windows and that's all to install JDK 🥳.
 
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/60171460/157497327-09035824-bc66-4f1f-ad66-a92690bf4313.gif)
+![environment variables (2)](https://user-images.githubusercontent.com/60171460/157497327-09035824-bc66-4f1f-ad66-a92690bf4313.gif)
 
 #### Node.js
 
@@ -81,13 +81,13 @@ These plugins are Prettier and ESlint
 - **<ins>Second way</ins>:** Open Visual Studio code and drag the folder in Visual Studio Code Window
 - **<ins>Third way</ins>:** Open Visual Studio, on top bar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
 
-![openProject-gif](https://user-images.githubusercontent.com/60171460/157133969-48d2908d-0a9a-463e-9441-b6010c76b55f.gif)
+![openProject-gif](https://user-images.githubusercontent.com/60171460/157499108-f272d71b-f60c-460d-acdd-49b3c9002933.gif)
 
 ## Running project
 
-- In Visual Studio Code, open new terminal with ``` Ctrl+Shift+` ``` or on top bar click Terminal, then click New Terminal
+- In Visual Studio Code, open new terminal with ``` Ctrl+Shift+` ``` or ``` Ctrl+Shift+ñ ``` or on top bar click **Terminal**, then click **New Terminal**
 
-![openTerminal](https://user-images.githubusercontent.com/60171460/157134643-7f26e19c-4632-4ab5-b547-8dd1c6f08ba7.gif)
+![openTerminal](https://user-images.githubusercontent.com/60171460/157498798-253494f2-abc8-4764-a343-3cb8e37acdc9.gif)
 
 Type the following commands to run the following test cases
 
