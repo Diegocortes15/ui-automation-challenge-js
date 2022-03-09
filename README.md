@@ -4,7 +4,7 @@
 
 #### JDK Java
 
-1. Make sure you have installed [JDK Java](https://www.oracle.com/java/technologies/downloads/).
+1. Make sure you have installed <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">JDK Java</a>.
 2. Take in mind the **path** when you are saving Java folder **that contains jdk**.
 3. Copy jdk path.
 4. On windows, in search bar, type enviroment variables and click on **Edit the system enviroment variables**.
