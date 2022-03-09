@@ -43,7 +43,7 @@ These plugins are Prettier and ESlint
 
 1. Go to Visual Studio Code application.
 2. On left sidebar in Visual Studio Code, click **Extensions** or press ``` Crtl+Shift+X ```.
-3. In the search, type Prettier and click "Prettier - Code formatter", then click on "install".
+3. In the search, type Prettier and click **Prettier - Code formatter**, then click on **install**.
 4. That's all to install Prettier in VSCode 🥳
 
 ![prettier-gif](https://user-images.githubusercontent.com/60171460/157133893-0e7a3145-d829-4b3f-bd5f-10b09bebe2bc.gif)
@@ -52,7 +52,7 @@ These plugins are Prettier and ESlint
 
 1. Go to Visual Studio Code application.
 2. On left sidebar in Visual Studio Code, click **Extensions** or press ``` Crtl+Shift+X ```.
-3. In the search, type Prettier and click "ESlint", then click on "install".
+3. In the search, type Prettier and click **ESlint**, then click on **install**.
 4. That's all to install ESlint in VSCode 🥳
 
 ![eslint-gif](https://user-images.githubusercontent.com/60171460/157133918-10c89078-a1c2-463e-a3cd-d93509aafe53.gif)
@@ -63,7 +63,7 @@ These plugins are Prettier and ESlint
 
 1. Click on the code button in this repository
 2. Select the Download Zip option
-3. Extract the .zip file with the Extract here option
+3. Extract the .zip file with the **Extract here** option
 4. Place the project folder on the desired location
 
 ### Open project
