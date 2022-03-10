@@ -7,6 +7,9 @@
 
 
 1. Make sure you have installed [JDK Java](https://www.oracle.com/java/technologies/downloads/).
+
+![JDK Java](https://user-images.githubusercontent.com/60171460/157584525-0bb45d95-4d3a-42da-8999-c8dce37dda6d.png)
+
 2. Take in mind the **path** when you are saving Java folder **that contains jdk**.
 3. Copy jdk path.
 
