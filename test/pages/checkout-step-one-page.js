@@ -1,6 +1,6 @@
 import headerComp from './components/header-comp';
 
-class CheckoutStepOne {
+class CheckoutStepOnePage {
 	get headerComp() {
 		return headerComp;
 	}
@@ -66,4 +66,4 @@ class CheckoutStepOne {
 	}
 }
 
-export default new CheckoutStepOne();
+export default new CheckoutStepOnePage();

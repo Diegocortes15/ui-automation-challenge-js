@@ -1,6 +1,6 @@
 import headerComp from './components/header-comp';
 
-class CheckoutComplete {
+class CheckoutCompletePage {
 	get headerComp() {
 		return headerComp;
 	}
@@ -14,4 +14,4 @@ class CheckoutComplete {
 	}
 }
 
-export default new CheckoutComplete();
+export default new CheckoutCompletePage();
