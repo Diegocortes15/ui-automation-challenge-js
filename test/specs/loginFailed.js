@@ -21,7 +21,7 @@ describe('Login with a invalid user', () => {
 		allureReporter.addStep(
 			'⏩ Check Error Message: Username and password do not match any user in this service'
 		);
-		expect(await loginPage.errorMessage).toHaveTextContaining(
+		await expect(await loginPage.errorMessage).toHaveTextContaining(
 			'Username and password do not match any user in this service'
 		);
 	});
@@ -35,7 +35,7 @@ describe('Login with a invalid user', () => {
 		allureReporter.addStep(
 			'⏩ Check Error Message: Sorry, this user has been locked out'
 		);
-		expect(await loginPage.errorMessage).toHaveTextContaining(
+		await expect(await loginPage.errorMessage).toHaveTextContaining(
 			'Sorry, this user has been locked out'
 		);
 	});
@@ -45,7 +45,7 @@ describe('Login with a invalid user', () => {
 		allureReporter.startStep('⏩ Trying to login without username and password');
 		await loginPage.login('', '');
 		allureReporter.addStep('⏩ Check Error Message: Username is required');
-		expect(await loginPage.errorMessage).toHaveTextContaining(
+		await expect(await loginPage.errorMessage).toHaveTextContaining(
 			'Username is required'
 		);
 	});
@@ -57,7 +57,7 @@ describe('Login with a invalid user', () => {
 		);
 		await loginPage.login(GENERIC_USER, '');
 		allureReporter.addStep('⏩ Check Error Message: Password is required');
-		expect(await loginPage.errorMessage).toHaveTextContaining(
+		await expect(await loginPage.errorMessage).toHaveTextContaining(
 			'Password is required'
 		);
 	});
@@ -67,7 +67,7 @@ describe('Login with a invalid user', () => {
 		allureReporter.startStep('⏩ Trying to login just with password');
 		await loginPage.login('', VALID_PASSWORD);
 		allureReporter.addStep('⏩ Check Error Message: Username is required');
-		expect(await loginPage.errorMessage).toHaveTextContaining(
+		await expect(await loginPage.errorMessage).toHaveTextContaining(
 			'Username is required'
 		);
 	});

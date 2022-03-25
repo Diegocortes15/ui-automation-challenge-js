@@ -36,6 +36,6 @@ describe('Sort products by Price (low to high)', () => {
 		const newPrices = await arrayPrices(await productsPage.itemPriceList);
 
 		allureReporter.addStep('⏩ Checking that those products were organized');
-		expect(orderedPrices).toEqual(newPrices);
+		await expect(orderedPrices).toEqual(newPrices);
 	});
 });

@@ -34,14 +34,14 @@ describe(`Purchase a product`, () => {
 		await productsPage.click_itemBtn(itemIndex);
 		await productsPage.headerComp.click_shoppingCartButton();
 
-		expect(await cartPage.titlePage).toEqual('YOUR CART');
+		await expect(await cartPage.titlePage).toEqual('YOUR CART');
 		allureReporter.addStep('⏩ Adding specific product to the shopping cart');
 		const itemName = await cartPage.getItemName();
 		expect(itemName).toEqual(SPECIFIC_ITEM_TO_ADD);
 		allureReporter.addStep('⏩ User goes to CHECKOUT: YOUR INFORMATION page');
 		await cartPage.click_checkoutButton();
 
-		expect(await checkoutStepOnePage.titlePage).toEqual(
+		await expect(await checkoutStepOnePage.titlePage).toEqual(
 			'CHECKOUT: YOUR INFORMATION'
 		);
 		const firstName = await casual._first_name();
@@ -56,12 +56,16 @@ describe(`Purchase a product`, () => {
 		await checkoutStepOnePage.click_continueButton();
 
 		allureReporter.addStep('⏩ Checking general purchase information');
-		expect(await checkoutStepTwoPage.titlePage).toEqual('CHECKOUT: OVERVIEW');
+		await expect(await checkoutStepTwoPage.titlePage).toEqual(
+			'CHECKOUT: OVERVIEW'
+		);
 		await checkoutStepTwoPage.click_finishButton();
 
 		allureReporter.addStep('⏩ Finalizing purchase');
-		expect(await checkoutCompletePage.titlePage).toEqual('CHECKOUT: COMPLETE!');
-		expect(await checkoutCompletePage.completeHeader).toEqual(
+		await expect(await checkoutCompletePage.titlePage).toEqual(
+			'CHECKOUT: COMPLETE!'
+		);
+		await expect(await checkoutCompletePage.completeHeader).toEqual(
 			'THANK YOU FOR YOUR ORDER'
 		);
 	});

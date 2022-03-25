@@ -35,7 +35,7 @@ describe('Logout from the home page', () => {
 
 			// Go to login page
 			allureReporter.addStep('⏩ User finish in login page');
-			expect(browser).toHaveUrlContaining(BASE_URL);
+			await expect(browser).toHaveUrlContaining(BASE_URL);
 		}
 	});
 });

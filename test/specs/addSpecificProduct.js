@@ -19,7 +19,7 @@ describe(`Add the specific product "${SPECIFIC_ITEM_TO_ADD}" to the shopping car
 		await loginPage.open();
 		allureReporter.startStep('⏩ Login with valid username and password');
 		await loginPage.login(STANDARD_USER, VALID_PASSWORD);
-		expect(await productsPage.titlePage).toEqual('PRODUCTS');
+		await expect(await productsPage.titlePage).toEqual('PRODUCTS');
 	});
 
 	it('Validate the correct product was added to the cart.', async () => {
@@ -35,13 +35,13 @@ describe(`Add the specific product "${SPECIFIC_ITEM_TO_ADD}" to the shopping car
 
 		await productsPage.headerComp.click_shoppingCartButton();
 		allureReporter.addStep('⏩ User goes to the shopping cart');
-		expect(await cartPage.titlePage).toEqual('YOUR CART');
+		await expect(await cartPage.titlePage).toEqual('YOUR CART');
 
 		const itemName = await cartPage.getItemName();
 
 		allureReporter.addStep(
 			'⏩ Check specific product was added to shopping cart'
 		);
-		expect(itemName).toEqual(SPECIFIC_ITEM_TO_ADD);
+		await expect(itemName).toEqual(SPECIFIC_ITEM_TO_ADD);
 	});
 });

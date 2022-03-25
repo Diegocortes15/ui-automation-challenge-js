@@ -19,7 +19,7 @@ describe('Add multiple items to the shopping cart', () => {
 		await loginPage.open();
 		allureReporter.startStep('⏩ Login with valid username and password');
 		await loginPage.login(STANDARD_USER, VALID_PASSWORD);
-		expect(await productsPage.titlePage).toEqual('PRODUCTS');
+		await expect(await productsPage.titlePage).toEqual('PRODUCTS');
 	});
 
 	it('Validate all the items that have been added to the shopping cart', async () => {
@@ -73,7 +73,7 @@ describe('Add multiple items to the shopping cart', () => {
 
 		await productsPage.headerComp.click_shoppingCartButton();
 		allureReporter.addStep('⏩ User goes to the shopping cart');
-		expect(await cartPage.titlePage).toEqual('YOUR CART');
+		await expect(await cartPage.titlePage).toEqual('YOUR CART');
 
 		const shoppingCart = [];
 
@@ -87,6 +87,6 @@ describe('Add multiple items to the shopping cart', () => {
 		allureReporter.addStep(
 			'⏩ Checking that the products were added to the shopping cart'
 		);
-		expect(itemsAdded).toEqual(shoppingCart);
+		await expect(itemsAdded).toEqual(shoppingCart);
 	});
 });

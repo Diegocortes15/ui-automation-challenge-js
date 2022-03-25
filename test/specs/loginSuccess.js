@@ -21,7 +21,7 @@ describe('Login with a valid user', () => {
 			allureReporter.startStep('⏩ Login with valid username and password');
 			await loginPage.login(user, VALID_PASSWORD);
 			allureReporter.addStep('⏩ The user goes to PRODUCTS page');
-			expect(await productsPage.titlePage).toEqual('PRODUCTS');
+			await expect(await productsPage.titlePage).toEqual('PRODUCTS');
 		}
 	});
 });
