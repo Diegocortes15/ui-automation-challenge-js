@@ -153,3 +153,6 @@ Type the following commands to run the following test cases
 - ``` npx allure open ``` if it doesn't work, try with
     - On Windows: ``` npx allure generate allure-results ; npx allure open ```
     - On Mac: ``` npx allure generate allure-results && npx allure open ```
+
+![Open Allure report](https://user-images.githubusercontent.com/60171460/161237542-da943049-b067-4db4-b8ce-852beb1882fe.gif)
+
