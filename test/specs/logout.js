@@ -21,7 +21,7 @@ describe('Logout from the home page', () => {
 			await loginPage.login(user, VALID_PASSWORD);
 
 			allureReporter.addStep('⏩ The user goes to PRODUCTS page');
-			expect(await productsPage.titlePage).toEqual('PRODUCTS');
+			await expect(await productsPage.titlePage).toEqual('PRODUCTS');
 
 			await productsPage.headerComp.primaryHeader.waitForDisplayed();
 			await productsPage.headerComp.primaryHeader.waitForClickable();
