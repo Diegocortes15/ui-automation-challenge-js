@@ -96,63 +96,150 @@ Type the following commands to run the following test cases
 
 - Type ``` npm install ``` and wait all packages will be downloaded
 
+```
+npm install
+```
+
 ### Running test cases
 
 1. Login with a valid user
 
-    - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/loginSuccess.js ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/loginSuccess.js ```
+    - On Windows:
+        ```
+        npx kill-port 4444 ; npx wdio --spec test/specs/loginSuccess.js
+        ```
+    - On Mac:
+        ```
+        npx kill-port 4444 && npx wdio --spec test/specs/loginSuccess.js
+        ```
     
 2. Login with an invalid user
-    - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/loginFailed.js ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/loginFailed.js ```
+    - On Windows: 
+        ```
+        npx kill-port 4444 ; npx wdio --spec test/specs/loginFailed.js
+        ```
+    - On Mac:
+        ```
+        npx kill-port 4444 && npx wdio --spec test/specs/loginFailed.js
+        ```
 
 3. Logout from the home page
-    - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/logout.js ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/logout.js ```
+    - On Windows: 
+        ```
+        npx kill-port 4444 ; npx wdio --spec test/specs/logout.js
+        ```
+    - On Mac: 
+        ```
+        npx kill-port 4444 && npx wdio --spec test/specs/logout.js
+        ```
 
 4. Sort products by Price (low to high)
-    - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/sortProducts.js ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/sortProducts.js ```
+    - On Windows:
+        ```
+        npx kill-port 4444 ; npx wdio --spec test/specs/sortProducts.js
+        ```
+    - On Mac: 
+        ```
+        npx kill-port 4444 && npx wdio --spec test/specs/sortProducts.js
+        ```
 
 5. Add multiple items to the shopping cart
-    - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/addProducts.js ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/addProducts.js ```
+    - On Windows: 
+        ```
+        npx kill-port 4444 ; npx wdio --spec test/specs/addProducts.js
+        ```
+    - On Mac: 
+        ```
+        npx kill-port 4444 && npx wdio --spec test/specs/addProducts.js
+        ```
 
 6. Add the specific product ‘Sauce Labs Onesie’ to the shopping cart
-    - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/addSpecificProduct.js ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/addSpecificProduct.js ```
+    - On Windows: 
+        ```
+        npx kill-port 4444 ; npx wdio --spec test/specs/addSpecificProduct.js
+        ```
+    - On Mac: 
+        ```
+        npx kill-port 4444 && npx wdio --spec test/specs/addSpecificProduct.js
+        ```
 
 7. Complete a purchase
-    - On Windows: ``` npx kill-port 4444 ; npx wdio --spec test/specs/purchase.js ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio --spec test/specs/purchase.js ```
+    - On Windows: 
+        ```
+        npx kill-port 4444 ; npx wdio --spec test/specs/purchase.js
+        ```
+    - On Mac: 
+        ```
+        npx kill-port 4444 && npx wdio --spec test/specs/purchase.js
+        ```
     
 ### Running test cases at the same time
 
 - Running all test cases
 
-    - On Windows: ``` npx kill-port 4444 ; npx wdio ```
-    - On Mac: ``` npx kill-port 4444 && npx wdio ```
+    - On Windows:
+        ```
+        npx kill-port 4444 ; npx wdio
+        ```
+        
+    - On Mac:
+        ```
+        npx kill-port 4444 && npx wdio
+        ```
     
 - Running test cases by suite
     - Login Suite
-        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite login ```
-        - On Mac: ``` npx kill-port 4444 && npx wdio --suite login ```
+        - On Windows: 
+            ```
+            npx kill-port 4444 ; npx wdio --suite login
+            ```
+        - On Mac:
+            ```
+            npx kill-port 4444 && npx wdio --suite login
+            ```
     - Logout Suite
-        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite logout ```
-        - On Mac: ``` npx kill-port 4444 && npx wdio --suite logout ```
+        - On Windows: 
+            ```
+            npx kill-port 4444 ; npx wdio --suite logout
+            ```
+        - On Mac: 
+            ```
+            npx kill-port 4444 && npx wdio --suite logout
+            ```
     - Products Suite
-        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite products ```
-        - On Mac: ``` npx kill-port 4444 && npx wdio --suite products ```
+        - On Windows: 
+            ```
+            npx kill-port 4444 ; npx wdio --suite products
+            ```
+        - On Mac: 
+            ```
+            npx kill-port 4444 && npx wdio --suite products
+            ```
     - Purchase Suite
-        - On Windows: ``` npx kill-port 4444 ; npx wdio --suite purchase ```
-        - On Mac: ``` npx kill-port 4444 && npx wdio --suite purchase ```
+        - On Windows: 
+            ```
+            npx kill-port 4444 ; npx wdio --suite purchase
+            ```
+        - On Mac: 
+            ```
+            npx kill-port 4444 && npx wdio --suite purchase
+            ```
 
 ### Open Allure report
 
-- ``` npx allure open ``` if it doesn't work, try with
-    - On Windows: ``` npx allure generate allure-results ; npx allure open ```
-    - On Mac: ``` npx allure generate allure-results && npx allure open ```
+```
+npx allure open
+``` 
+if above command doesn't work, try with
+
+- On Windows: 
+    ```
+    npx allure generate allure-results ; npx allure open
+    ```
+- On Mac: 
+    ```
+    npx allure generate allure-results && npx allure open
+    ```
 
 ![Open Allure report](https://user-images.githubusercontent.com/60171460/161237542-da943049-b067-4db4-b8ce-852beb1882fe.gif)
 
