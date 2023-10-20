@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install
+        run: npm install
+      - name: Test
+        run: npm run test
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: allure-report
+          path: allure-report
+          retention-days: 30

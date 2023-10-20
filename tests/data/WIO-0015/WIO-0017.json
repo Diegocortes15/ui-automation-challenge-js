@@ -1,0 +1,13 @@
+{
+  "testCase": "WIO-0017",
+  "testSummary": "Add the specific product 'Sauce Labs Onesie' to the shopping cart",
+  "testDescription": "Validate the correct product was added to the cart.",
+  "tags": "@regression @sprint3 @wio-0015 @wio-0017",
+  "loginPage": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "productsPage": {
+    "addProduct": "Sauce Labs Onesie"
+  }
+}

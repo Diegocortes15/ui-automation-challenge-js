@@ -1,0 +1,11 @@
+{
+  "testCase": "WIO-0007",
+  "testSummary": "Verify empty user with password cannot login",
+  "testDescription": "Validate that an empty user with password cannot login",
+  "tags": "@regression @sprint1 @wio-0001 @wio-0007",
+  "loginPage": {
+    "username": "",
+    "password": "secret_sauce",
+    "validationMessage": "Username is required"
+  }
+}

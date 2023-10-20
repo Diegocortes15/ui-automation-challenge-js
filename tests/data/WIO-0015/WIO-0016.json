@@ -1,0 +1,10 @@
+{
+  "testCase": "WIO-0016",
+  "testSummary": "Add multiple items to the shopping cart",
+  "testDescription": " Validate all the items that have been added to the shopping cart",
+  "tags": "@regression @sprint2 @wio-0015 @wio-0016",
+  "loginPage": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  }
+}

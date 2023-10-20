@@ -1,10 +1,10 @@
 # Automation Challenge
+
 ## Tutorial to run the project
+
 ### Prerequisites
 
 #### JDK Java
-
-
 
 1. Make sure you have installed [JDK Java](https://www.oracle.com/java/technologies/downloads/).
 
@@ -19,7 +19,6 @@
 
 ![environment variables](https://user-images.githubusercontent.com/60171460/157496931-f1d25ccc-66c8-4608-9a3b-24fd2411a920.gif)
 
-
 5. In the **System properties** window, click **environment variables**.
 6. In **Environment variables** window in **Advanced tab**, in **System variables** section, double click **Path**.
 7. In **Edit environment variable** click **New** button and paste the **path that contains jdk**, then click **Ok**.
@@ -32,13 +31,14 @@
 1. You need must have [Node.js](https://nodejs.org/en/) installed (Node.js LTS version recommended)
 2. When you are installing Node.js, make sure to check the option
 
-    - [x] **Automatically install the necesary tools. Note that this will also install Chocolatey. The script will pop-up in a new window after the installation completes.**
+   - [x] **Automatically install the necesary tools. Note that this will also install Chocolatey. The script will pop-up in a new window after the installation completes.**
 
 ![nodeInstall](https://user-images.githubusercontent.com/60171460/157139770-d00bb969-9b36-4179-9dd2-ec5bf3fbd89a.PNG)
 
 #### Browsers
 
 Installed:
+
 - Chrome
 - Firefox
 - MicrofoftEdge
@@ -54,7 +54,7 @@ These plugins are Prettier and ESlint
 #### 🤔 How to install Prettier in Visual Studio Code?
 
 1. Go to Visual Studio Code application.
-2. On left sidebar in Visual Studio Code, click **Extensions** or press ``` Crtl+Shift+X ```.
+2. On left sidebar in Visual Studio Code, click **Extensions** or press `Crtl+Shift+X`.
 3. In the search, type Prettier and click **Prettier - Code formatter**, then click on **install**.
 4. That's all to install Prettier in VSCode 🥳
 
@@ -63,7 +63,7 @@ These plugins are Prettier and ESlint
 #### 🤔 How to install ESlint in Visual Studio Code?
 
 1. Go to Visual Studio Code application.
-2. On left sidebar in Visual Studio Code, click **Extensions** or press ``` Crtl+Shift+X ```.
+2. On left sidebar in Visual Studio Code, click **Extensions** or press `Crtl+Shift+X`.
 3. In the search, type Prettier and click **ESlint**, then click on **install**.
 4. That's all to install ESlint in VSCode 🥳
 
@@ -82,164 +82,47 @@ These plugins are Prettier and ESlint
 
 - **<ins>First way</ins>:** Right click on the folder and open it with Visual Studio Code
 - **<ins>Second way</ins>:** Open Visual Studio code and drag the folder in Visual Studio Code Window
-- **<ins>Third way</ins>:** Open Visual Studio, on top bar, click File and Open Folder or press ``` Ctrl+K Ctrl+O ```, then choose the folder where you save it
+- **<ins>Third way</ins>:** Open Visual Studio, on top bar, click File and Open Folder or press `Ctrl+K Ctrl+O`, then choose the folder where you save it
 
 ![openProject-gif](https://user-images.githubusercontent.com/60171460/157499108-f272d71b-f60c-460d-acdd-49b3c9002933.gif)
 
 ## Running project
 
-- In Visual Studio Code, open new terminal with ``` Ctrl+Shift+` ``` or ``` Ctrl+Shift+ñ ``` or on top bar click **Terminal**, then click **New Terminal**
+- In Visual Studio Code, open new terminal with `` Ctrl+Shift+` `` or `Ctrl+Shift+ñ` or on top bar click **Terminal**, then click **New Terminal**
 
 ![openTerminal](https://user-images.githubusercontent.com/60171460/157498798-253494f2-abc8-4764-a343-3cb8e37acdc9.gif)
 
 Type the following commands to run the following test cases
 
-- Type ``` npm install ``` and wait all packages will be downloaded
+- Type `npm install` and wait all packages will be downloaded
 
 ```
 npm install
 ```
 
-### Running test cases
+### Running test cases by user story
 
-1. Login with a valid user
+📗 Story WIO-0002
 
-    - On Windows:
-        ```
-        npx kill-port 4444 ; npx wdio --spec test/specs/loginSuccess.js
-        ```
-    - On Mac:
-        ```
-        npx kill-port 4444 && npx wdio --spec test/specs/loginSuccess.js
-        ```
-    
-2. Login with an invalid user
-    - On Windows: 
-        ```
-        npx kill-port 4444 ; npx wdio --spec test/specs/loginFailed.js
-        ```
-    - On Mac:
-        ```
-        npx kill-port 4444 && npx wdio --spec test/specs/loginFailed.js
-        ```
+| 📗 Stories  |             |             |
+| ----------- | ----------- | ----------- |
+| 📗 WIO-0001 | 📗 WIO-0002 | 📗 WIO-0013 |
+| 📗 WIO-0015 | 📗 WIO-0018 | 📗 WIO-0020 |
 
-3. Logout from the home page
-    - On Windows: 
-        ```
-        npx kill-port 4444 ; npx wdio --spec test/specs/logout.js
-        ```
-    - On Mac: 
-        ```
-        npx kill-port 4444 && npx wdio --spec test/specs/logout.js
-        ```
+```
+npx wdio --spec tests/specs/WIO-0002.spec.js
+```
 
-4. Sort products by Price (low to high)
-    - On Windows:
-        ```
-        npx kill-port 4444 ; npx wdio --spec test/specs/sortProducts.js
-        ```
-    - On Mac: 
-        ```
-        npx kill-port 4444 && npx wdio --spec test/specs/sortProducts.js
-        ```
+### Running all test cases at the same time
 
-5. Add multiple items to the shopping cart
-    - On Windows: 
-        ```
-        npx kill-port 4444 ; npx wdio --spec test/specs/addProducts.js
-        ```
-    - On Mac: 
-        ```
-        npx kill-port 4444 && npx wdio --spec test/specs/addProducts.js
-        ```
-
-6. Add the specific product ‘Sauce Labs Onesie’ to the shopping cart
-    - On Windows: 
-        ```
-        npx kill-port 4444 ; npx wdio --spec test/specs/addSpecificProduct.js
-        ```
-    - On Mac: 
-        ```
-        npx kill-port 4444 && npx wdio --spec test/specs/addSpecificProduct.js
-        ```
-
-7. Complete a purchase
-    - On Windows: 
-        ```
-        npx kill-port 4444 ; npx wdio --spec test/specs/purchase.js
-        ```
-    - On Mac: 
-        ```
-        npx kill-port 4444 && npx wdio --spec test/specs/purchase.js
-        ```
-    
-### Running test cases at the same time
-
-- Running all test cases
-
-    - On Windows:
-        ```
-        npx kill-port 4444 ; npx wdio
-        ```
-        
-    - On Mac:
-        ```
-        npx kill-port 4444 && npx wdio
-        ```
-    
-- Running test cases by suite
-    - Login Suite
-        - On Windows: 
-            ```
-            npx kill-port 4444 ; npx wdio --suite login
-            ```
-        - On Mac:
-            ```
-            npx kill-port 4444 && npx wdio --suite login
-            ```
-    - Logout Suite
-        - On Windows: 
-            ```
-            npx kill-port 4444 ; npx wdio --suite logout
-            ```
-        - On Mac: 
-            ```
-            npx kill-port 4444 && npx wdio --suite logout
-            ```
-    - Products Suite
-        - On Windows: 
-            ```
-            npx kill-port 4444 ; npx wdio --suite products
-            ```
-        - On Mac: 
-            ```
-            npx kill-port 4444 && npx wdio --suite products
-            ```
-    - Purchase Suite
-        - On Windows: 
-            ```
-            npx kill-port 4444 ; npx wdio --suite purchase
-            ```
-        - On Mac: 
-            ```
-            npx kill-port 4444 && npx wdio --suite purchase
-            ```
+```
+npm run test
+```
 
 ### Open Allure report
 
 ```
 npx allure open
-``` 
-if above command doesn't work, try with
-
-- On Windows: 
-    ```
-    npx allure generate allure-results ; npx allure open
-    ```
-- On Mac: 
-    ```
-    npx allure generate allure-results && npx allure open
-    ```
+```
 
 ![Open Allure report](https://user-images.githubusercontent.com/60171460/161237542-da943049-b067-4db4-b8ce-852beb1882fe.gif)
-

@@ -1,0 +1,13 @@
+{
+  "testCase": "WIO-0014",
+  "testSummary": "Sort products by Price (low to high)",
+  "testDescription": " Validate the products have been sorted by price correctly, low to high",
+  "tags": "@regression @sprint2 @wio-0013 @wio-0014",
+  "loginPage": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "productsPage": {
+    "sortProducts": "Price (low to high)"
+  }
+}

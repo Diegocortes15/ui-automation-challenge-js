@@ -1,0 +1,29 @@
+{
+  "locators": {
+    "checkoutInformationContainer": {
+      "selector": "#checkout_info_container",
+      "description": "Checkout information container"
+    },
+
+    "pageTitle": {
+      "selector": ".title",
+      "description": "Page title"
+    },
+    "inputFirstName": {
+      "selector": "[data-test='firstName']",
+      "description": "Input first name"
+    },
+    "inputLastName": {
+      "selector": "[data-test='lastName']",
+      "description": "Input last name"
+    },
+    "inputPostalCode": {
+      "selector": "[data-test='postalCode']",
+      "description": "Input postal code"
+    },
+    "buttonContinue": {
+      "selector": "[data-test='continue']",
+      "description": "Button continue"
+    }
+  }
+}

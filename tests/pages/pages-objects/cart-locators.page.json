@@ -1,0 +1,36 @@
+{
+  "locators": {
+    "pageTitle": {
+      "selector": ".title",
+      "description": "Page title"
+    },
+    "itemCartList": {
+      "selector": ".cart_item",
+      "description": "Item cart list"
+    },
+    "itemNameList": {
+      "selector": ".inventory_item_name",
+      "description": "Item name list"
+    },
+    "itemPriceList": {
+      "selector": ".inventory_item_price",
+      "description": "Item price list"
+    },
+    "itemName": {
+      "selector": ".inventory_item_name",
+      "description": "Item name"
+    },
+    "itemPrice": {
+      "selector": ".inventory_item_price",
+      "description": "Item price"
+    },
+    "itemBtn": {
+      "selector": ".cart_button",
+      "description": "Reove item button"
+    },
+    "buttonCheckout": {
+      "selector": "[data-test='checkout']",
+      "description": "Checkout button"
+    }
+  }
+}
