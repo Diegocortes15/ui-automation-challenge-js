@@ -107,7 +107,7 @@ npm install
 | 📗 Stories  |             |             |
 | ----------- | ----------- | ----------- |
 | 📗 WIO-0001 | 📗 WIO-0002 | 📗 WIO-0013 |
-| 📗 WIO-0015 | 📗 WIO-0018 | 📗 WIO-0020 |
+| 📗 WIO-0015 | 📗 WIO-0018 |             |
 
 ```
 npx wdio --spec tests/specs/WIO-0002.spec.js

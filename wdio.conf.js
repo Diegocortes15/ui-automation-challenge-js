@@ -65,13 +65,22 @@ export const config = {
   capabilities: [
     {
       browserName: "chrome",
-    },
-    /*{
-      browserName: "firefox",
+      "goog:chromeOptions": {
+        args: ["headless", "disable-gpu"],
+      },
     },
     {
-      browserName: "MicrosoftEdge",
-    },*/
+      browserName: "firefox",
+      "moz:firefoxOptions": {
+        args: ["-headless"],
+      },
+    },
+    {
+      browserName: "msedge",
+      "ms:edgeOptions": {
+        args: ["--headless"],
+      },
+    },
   ],
 
   //
