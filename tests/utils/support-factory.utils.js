@@ -1,18 +1,18 @@
-import casual from "casual";
+import casual from 'casual';
 
 class SupportFactory {
   async addAnnotations(jsonData) {
     this._testInfo.annotations.push({
-      type: "testId",
-      description: jsonData["testCase"],
+      type: 'testId',
+      description: jsonData['testCase'],
     });
     this._testInfo.annotations.push({
-      type: "testSummary",
-      description: jsonData["testSummary"],
+      type: 'testSummary',
+      description: jsonData['testSummary'],
     });
     this._testInfo.annotations.push({
-      type: "testDescription",
-      description: jsonData["testDescription"],
+      type: 'testDescription',
+      description: jsonData['testDescription'],
     });
   }
 
@@ -30,10 +30,10 @@ class SupportFactory {
         const jsonString = JSON.stringify(list, null, 2);
         return jsonString;
       } else {
-        throw new Error("Input is not a valid array of objects.");
+        throw new Error('Input is not a valid array of objects.');
       }
     } catch (error) {
-      console.error("Error converting to JSON:", error.message);
+      console.error('Error converting to JSON:', error.message);
       return null; // or return an error message
     }
   }

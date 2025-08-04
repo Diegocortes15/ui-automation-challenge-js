@@ -1,0 +1,13 @@
+{
+  "testCase": "WIO-0024",
+  "testSummary": "Verify 'standard_user' can login",
+  "testDescription": "Validate the Login Screen UI",
+  "tags": "@regression @sprint4 @vt-login @wio-0024",
+  "loginPage": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "productsPage": {
+    "titlePage": "Products"
+  }
+}

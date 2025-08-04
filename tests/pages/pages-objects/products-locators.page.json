@@ -5,7 +5,7 @@
       "description": "Page title"
     },
     "dropdownProductSort": {
-      "selector": "[data-test='product_sort_container']",
+      "selector": "select.product_sort_container",
       "description": "Dropdown product sort"
     },
     "itemList": {

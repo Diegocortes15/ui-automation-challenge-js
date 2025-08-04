@@ -1,5 +1,4 @@
-import allureReporter from "@wdio/allure-reporter";
-import { WdioFactory } from "../../utils/wdioFactory.utils";
+import { WdioFactory } from '../../utils/wdio-factory.utils';
 
 class LoginPageMethods {
   _wdioFactory;
@@ -8,8 +7,8 @@ class LoginPageMethods {
 
   constructor() {
     this._wdioFactory = new WdioFactory();
-    this._pageName = "login-locators.page";
-    this._url = "https://www.saucedemo.com/";
+    this._pageName = 'login-locators.page';
+    this._url = 'https://www.saucedemo.com/';
   }
 
   async goto() {
@@ -20,15 +19,15 @@ class LoginPageMethods {
   }
 
   async enterUsername(username) {
-    await this._wdioFactory.setValue(this._pageName, "inputUser", username);
+    await this._wdioFactory.setValue(this._pageName, 'inputUser', username);
   }
 
   async enterPassword(password) {
-    await this._wdioFactory.setValue(this._pageName, "inputPassword", password);
+    await this._wdioFactory.setValue(this._pageName, 'inputPassword', password);
   }
 
   async clickButtonSubmit() {
-    await this._wdioFactory.click(this._pageName, "buttonSubmit");
+    await this._wdioFactory.click(this._pageName, 'buttonSubmit');
   }
 
   async login(username, password) {
@@ -41,23 +40,15 @@ class LoginPageMethods {
   }
 
   async verifyUsername(username) {
-    await this._wdioFactory.verifyValue(this._pageName, "inputUser", username);
+    await this._wdioFactory.verifyValue(this._pageName, 'inputUser', username);
   }
 
   async verifyPassword(password) {
-    await this._wdioFactory.verifyValue(
-      this._pageName,
-      "inputPassword",
-      password
-    );
+    await this._wdioFactory.verifyValue(this._pageName, 'inputPassword', password);
   }
 
   async verifyValidationMessage(validationMessage) {
-    await this._wdioFactory.verifyText(
-      this._pageName,
-      "errorMessage",
-      validationMessage
-    );
+    await this._wdioFactory.verifyText(this._pageName, 'errorMessage', validationMessage);
   }
 
   async verifyURL() {

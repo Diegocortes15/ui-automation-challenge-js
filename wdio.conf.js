@@ -1,4 +1,8 @@
-const allure = require("allure-commandline");
+import path from 'node:path';
+import allure from 'allure-commandline';
+import fs from 'fs';
+
+export const AUTO_SAVE_BASELINE = false;
 
 export const config = {
   //
@@ -6,7 +10,7 @@ export const config = {
   // Runner Configuration
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
-  runner: "local",
+  runner: 'local',
   //
   // ==================
   // Specify Test Files
@@ -23,17 +27,17 @@ export const config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./tests/specs/**/*.js"],
+  specs: ['./tests/specs/**/*.js'],
 
   suites: {
-    login: ["./test/specs/loginSuccess.js", "./test/specs/loginFailed.js"],
-    logout: ["./test/specs/logout.js"],
+    login: ['./test/specs/loginSuccess.js', './test/specs/loginFailed.js'],
+    logout: ['./test/specs/logout.js'],
     products: [
-      "./test/specs/sortProducts.js",
-      "./test/specs/addProducts.js",
-      "./test/specs/addSpecificProduct.js",
+      './test/specs/sortProducts.js',
+      './test/specs/addProducts.js',
+      './test/specs/addSpecificProduct.js',
     ],
-    purchase: ["./test/specs/purchase.js"],
+    purchase: ['./test/specs/purchase.js'],
   },
 
   // Patterns to exclude.
@@ -56,7 +60,7 @@ export const config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 10,
+  maxInstances: 5,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -64,23 +68,31 @@ export const config = {
   //
   capabilities: [
     {
-      browserName: "chrome",
-      "goog:chromeOptions": {
-        args: ["headless", "disable-gpu"],
+      browserName: 'chrome',
+      'wdio-ics:options': {
+        logName: 'chrome-browser', // Custom log name for Chrome browser for visual testing
+      },
+      'goog:chromeOptions': {
+        args: [/*'headless',*/ 'disable-gpu'],
+        excludeSwitches: ['--enable-automation'],
+        useAutomationExtension: false,
+        prefs: {
+          'profile.password_manager_leak_detection': false,
+        },
       },
     },
-    {
-      browserName: "firefox",
-      "moz:firefoxOptions": {
-        args: ["-headless"],
-      },
-    },
-    {
-      browserName: "msedge",
-      "ms:edgeOptions": {
-        args: ["--headless"],
-      },
-    },
+    /*{
+			browserName: "firefox",
+			"moz:firefoxOptions": {
+				args: ["-headless"],
+			},
+		},
+		{
+			browserName: "msedge",
+			"ms:edgeOptions": {
+				args: ["--headless"],
+			},
+		},*/
   ],
 
   //
@@ -90,7 +102,7 @@ export const config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
+  logLevel: 'error',
   //
   // Set specific log levels per logger
   // loggers:
@@ -114,14 +126,14 @@ export const config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: "https://www.saucedemo.com/",
+  baseUrl: 'https://www.saucedemo.com/',
   //
   // Default timeout for all waitFor* commands.
-  waitforTimeout: 10000,
+  waitforTimeout: 10_000,
   //
   // Default timeout in milliseconds for request
   // if browser driver or grid doesn't send response
-  connectionRetryTimeout: 120000,
+  connectionRetryTimeout: 120_000,
   //
   // Default request retries count
   connectionRetryCount: 3,
@@ -130,7 +142,21 @@ export const config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  // services: [],
+  services: [
+    [
+      'visual',
+      {
+        // Some options, see the docs for more
+        baselineFolder: path.join(process.cwd(), 'tmp', 'baseline'),
+        formatImageName: '{tag}',
+        screenshotPath: path.join(process.cwd(), 'tmp'),
+        savePerInstance: false,
+        disableBlinkingCursor: true,
+        autoSaveBaseline: AUTO_SAVE_BASELINE,
+        // ... more options
+      },
+    ],
+  ],
   //
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
@@ -138,7 +164,7 @@ export const config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: "mocha",
+  framework: 'mocha',
   //
   // The number of times to retry the entire specfile when it fails as a whole
   // specFileRetries: 1,
@@ -153,11 +179,11 @@ export const config = {
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: [
-    "spec",
+    'spec',
     [
-      "allure",
+      'allure',
       {
-        outputDir: "allure-results",
+        outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: true,
       },
@@ -169,7 +195,7 @@ export const config = {
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
   mochaOpts: {
-    ui: "bdd",
+    ui: 'bdd',
     timeout: 60000,
   },
   //
@@ -185,8 +211,13 @@ export const config = {
    * @param {object} config wdio configuration object
    * @param {Array.<Object>} capabilities list of capabilities details
    */
-  // onPrepare: function (config, capabilities) {
-  // },
+  onPrepare: function (config, capabilities) {
+    // remove allure-results folder and allure-report folder
+    fs.rmSync('allure-results', { recursive: true, force: true });
+    fs.rmSync('allure-report', { recursive: true, force: true });
+    // remove tmp folder
+    fs.rmSync('tmp', { recursive: true, force: true });
+  },
   /**
    * Gets executed before a worker process is spawned and can be used to initialise specific service
    * for that worker as well as modify runtime environments in an async fashion.
@@ -242,7 +273,7 @@ export const config = {
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
-  beforeTest: async function (test, context) {
+  beforeTest: async function (/*test, context*/) {
     await browser.maximizeWindow();
   },
   /**
@@ -315,19 +346,21 @@ export const config = {
    * @param {<Object>} results object containing test results
    */
   onComplete: function () {
-    const reportError = new Error("Could not generate Allure report");
-    const generation = allure(["generate", "allure-results", "--clean"]);
+    const reportError = new Error('Could not generate Allure report');
+    const generation = allure(['generate', 'allure-results', '--clean']);
     return new Promise((resolve, reject) => {
       const generationTimeout = setTimeout(() => reject(reportError), 5000);
 
-      generation.on("exit", function (exitCode) {
+      generation.on('exit', function (exitCode) {
         clearTimeout(generationTimeout);
 
         if (exitCode !== 0) {
           return reject(reportError);
         }
 
-        console.info("Allure report successfully generated");
+        console.info(`\u001b[1;36m Allure report successfully generated
+          ~ Run: npm run allure:open`);
+
         resolve();
       });
     });

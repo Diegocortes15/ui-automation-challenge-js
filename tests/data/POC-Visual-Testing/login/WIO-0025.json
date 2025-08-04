@@ -1,0 +1,15 @@
+{
+  "testCase": "WIO-0025",
+  "testSummary": "Verify Login Page UI Elements",
+  "testDescription": "Validate the Login Screen UI before login attempt",
+  "tags": "@regression @sprint4 @vt-login @wio-0025",
+  "loginPage": {
+    "username": "",
+    "password": ""
+  },
+  "expectedElements": [
+    "inputUser",
+    "inputPassword",
+    "buttonSubmit"
+  ]
+}

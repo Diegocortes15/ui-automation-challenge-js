@@ -1,6 +1,5 @@
-import allureReporter from "@wdio/allure-reporter";
-import { WdioFactory } from "../../utils/wdioFactory.utils";
-import supportFactory from "../../utils/supportFactory";
+import { WdioFactory } from '../../utils/wdio-factory.utils';
+import supportFactory from '../../utils/support-factory.utils';
 
 class CartPageMethods {
   _supportFactory;
@@ -11,53 +10,34 @@ class CartPageMethods {
   constructor() {
     this._supportFactory = supportFactory;
     this._wdioFactory = new WdioFactory();
-    this._pageName = "cart-locators.page";
+    this._pageName = 'cart-locators.page';
   }
 
   async clickCheckoutButton() {
-    await this._wdioFactory.click(this._pageName, "buttonCheckout");
+    await this._wdioFactory.click(this._pageName, 'buttonCheckout');
   }
 
   async getCartProducts() {
     const products = [];
-    const productList = await await this._wdioFactory.getElementSelector(
-      this._pageName,
-      "itemCartList"
-    );
+    const productList = await await this._wdioFactory.getElementSelector(this._pageName, 'itemCartList');
     const productListLength = productList.length;
     for (let index = 0; index < productListLength; index++) {
       products.push({
-        itemName: await this._wdioFactory.getTextByIndex(
-          this._pageName,
-          "itemName",
-          index
-        ),
-        price: String(
-          await this._wdioFactory.getTextByIndex(
-            this._pageName,
-            "itemPrice",
-            index
-          )
-        ).slice(1),
+        itemName: await this._wdioFactory.getTextByIndex(this._pageName, 'itemName', index),
+        price: String(await this._wdioFactory.getTextByIndex(this._pageName, 'itemPrice', index)).slice(1),
       });
     }
-    this.cartItemsAdded = await this._supportFactory.jsonToString(
-      products,
-      "itemName"
-    );
+    this.cartItemsAdded = await this._supportFactory.jsonToString(products, 'itemName');
     return this.cartItemsAdded;
   }
 
   async removeItems() {
-    await this._wdioFactory.clickAllIfExists(this._pageName, "itemBtn");
+    await this._wdioFactory.clickAllIfExists(this._pageName, 'itemBtn');
   }
 
   async verifyProductsAdded(expectedProductsAdded) {
     const products = await this.getCartProducts();
-    await this._wdioFactory.verifyCompareValues(
-      products,
-      expectedProductsAdded
-    );
+    await this._wdioFactory.verifyCompareValues(products, expectedProductsAdded);
   }
 }
 

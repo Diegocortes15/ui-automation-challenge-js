@@ -12,7 +12,7 @@ jobs:
       - name: Install
         run: npm ci
         env:
-            DETECT_CHROMEDRIVER_VERSION: true
+          DETECT_CHROMEDRIVER_VERSION: true
       - name: Test
         run: npm run test
       - uses: actions/upload-artifact@v1

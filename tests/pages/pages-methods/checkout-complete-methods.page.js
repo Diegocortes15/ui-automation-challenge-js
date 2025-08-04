@@ -1,5 +1,4 @@
-import allureReporter from "@wdio/allure-reporter";
-import { WdioFactory } from "../../utils/wdioFactory.utils";
+import { WdioFactory } from '../../utils/wdio-factory.utils';
 
 class CheckoutCompletePageMethods {
   _wdioFactory;
@@ -7,15 +6,11 @@ class CheckoutCompletePageMethods {
 
   constructor() {
     this._wdioFactory = new WdioFactory();
-    this._pageName = "checkout-complete-locators.page";
+    this._pageName = 'checkout-complete-locators.page';
   }
 
   async verifyCurrentPage({ titlePage: expectedTitlePage }) {
-    await this._wdioFactory.verifyText(
-      this._pageName,
-      "pageTitle",
-      expectedTitlePage
-    );
+    await this._wdioFactory.verifyText(this._pageName, 'pageTitle', expectedTitlePage);
   }
 }
 

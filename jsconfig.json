@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"types": ["node", "webdriverio/async", "@wdio/mocha-framework"]
+		"types": ["node", "@wdio/globals/types", "@wdio/mocha-framework", "@wdio/visual-service"]
 	},
 	"exclude": ["node_modules"]
 }
